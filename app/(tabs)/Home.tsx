@@ -1,8 +1,11 @@
-import { Text, View } from "react-native";
+import { Image, Text, View } from "react-native";
 export default function Home() {
   return (
     <View>
-        <Text>Home Screen psdbgbgsfg s ssdfgbsdgbsfg  dghmfgmfgjm,fhj,fh,f</Text>
+        <Text>DosiOnTime</Text>
+        <Image
+            source={require('../../assets/images/logo-medicareapp.png')}
+        />
     </View>
   );
 }
