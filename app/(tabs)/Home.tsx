@@ -1,10 +1,9 @@
 import React from "react";
 import { Text, View } from "react-native";
-
-export default function TabOneScreen() {
+export default function Home() {
   return (
     <View>
-      <Text>Tab One</Text>
+        <Text>Home Screen</Text>
     </View>
   );
 }
