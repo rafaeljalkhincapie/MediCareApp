@@ -6,9 +6,9 @@ export default function Home() {
         <Image
             source={require('../../assets/images/logo-medicareapp.png')}
         />
-        <Tex>egwthwrh rrthwtrhw</Tex>
-        <Tex>rtwrthrthwegeg  sthhwrthwrtb   wrthgwthwth
-        </Tex>
+        <Text>egwthwrh rrthwtrhw</Text>
+        <Text>rtwrthrthwegeg  sthhwrthwrtb   wrthgwthwth
+        </Text>
     </View>
 
   );
