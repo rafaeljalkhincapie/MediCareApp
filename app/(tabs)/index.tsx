@@ -5,14 +5,14 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function TabOneScreen() {
   return (
     <SafeAreaView>
-      <View style={{margin:20}}>
+      <View style={{margin:20, flexDirection:"row"}}>
         <Image 
-          source={require("../../assets/images/Logo.png")} alt="" 
-          style={{width:100, height:100}}
+          source={require("../../assets/images/logo-medicareapp.png")} alt="" 
+          style={{width:50, height:50}}
         />
-        <View style={{}}>
-          <Text>Dosi</Text>
-          <Text>OnTime</Text>
+        <View style={{flexDirection:"row"}}>
+          <Text style={{fontSize:50}}>Dosi</Text>
+          <Text style={{fontSize:50}}>OnTime</Text>
         </View>
         
       </View>
