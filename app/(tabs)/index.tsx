@@ -10,8 +10,8 @@ export default function TabOneScreen() {
           source={require("../../assets/images/Logo.png")} alt="" 
           style={{width:100, height:100}}
         />
-        <View style={{}}>
-          <Text>Dosi</Text>
+        <View style={{flexDirection:"row"}}>
+          <Text style={{fontSize:20}}>Dosi</Text>
           <Text>OnTime</Text>
         </View>
         
