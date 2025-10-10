@@ -6,6 +6,7 @@ export default function Home() {
         <Text>DosiOnTime</Text>
         <Image
             source={require('../../assets/images/logo-medicareapp.png')}
+            style={{ width: 200, height: 200 }}
         />
         <Text>egwthwrh rrthwtrhw</Text>
         <Text>rtwrthrthwegeg  sthhwrthwrtb   wrthgwthwth

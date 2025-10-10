@@ -1,10 +1,21 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Image, Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function TabOneScreen() {
   return (
-    <View>
-      <Text>Tab One</Text>
-    </View>
+    <SafeAreaView>
+      <View style={{margin:20}}>
+        <Image 
+          source={require("../../assets/images/Logo.png")} alt="" 
+          style={{width:100, height:100}}
+        />
+        <View style={{}}>
+          <Text>Dosi</Text>
+          <Text>OnTime</Text>
+        </View>
+        
+      </View>
+    </SafeAreaView>
   );
 }
