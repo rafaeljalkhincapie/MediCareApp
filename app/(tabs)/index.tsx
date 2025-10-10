@@ -4,17 +4,20 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function TabOneScreen() {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{margin:20}}>
       <View style={{margin:20, flexDirection:"row"}}>
         <Image 
           source={require("../../assets/images/logo-medicareapp.png")} alt="" 
-          style={{width:50, height:50}}
-        />
-        <View style={{flexDirection:"row"}}>
-          <Text style={{fontSize:50}}>Dosi</Text>
-          <Text style={{fontSize:50}}>OnTime</Text>
-        </View>
-        
+          style={{}}
+        /> 
+      </View>
+      <View style={{textAlign:"center"}}>
+        <Text style={{color:"#3E3E3E", fontSize:20, textAlign:"center",fontWeight:"bold"}}>Login</Text>
+        <Text style={{color:"#3E3E3E", fontSize:20, textAlign:"center"}}>Sign in to your account</Text>
+      </View>
+      <View style={{marginTop:50}}>
+        <View>Sign in with Google</View>
+        <View>Sign in with Microsoft</View>
       </View>
     </SafeAreaView>
   );
