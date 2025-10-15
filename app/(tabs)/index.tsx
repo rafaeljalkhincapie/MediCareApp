@@ -1,23 +1,42 @@
 import React from "react";
 import { Image, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-
+import styles from "../../assets/css/loginStyle";
+import PressEffect from "../../componentes/PressEffect/pressEffect";
 export default function TabOneScreen() {
   return (
-    <SafeAreaView style={{margin:20}}>
-      <View style={{margin:20, flexDirection:"row"}}>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.logo}>
         <Image 
-          source={require("../../assets/images/logo-medicareapp.png")} alt="" 
-          style={{}}
+          source={require("../../assets/images/logo-medicareapp.png")} alt="Logo DosiOnTime"
         /> 
       </View>
-      <View style={{textAlign:"center"}}>
-        <Text style={{color:"#3E3E3E", fontSize:20, textAlign:"center",fontWeight:"bold"}}>Login</Text>
-        <Text style={{color:"#3E3E3E", fontSize:20, textAlign:"center"}}>Sign in to your account</Text>
+      <View style={{marginBottom:40}}>
+        <Text style={styles.txtpresentation}>Login</Text>
+        <Text style={[styles.txtpresentation, styles.text20]}>Sign in to your account</Text>
       </View>
-      <View style={{marginTop:50}}>
-        <View>Sign in with Google</View>
-        <View>Sign in with Microsoft</View>
+      <View style={styles.bodycontainer}>
+        <PressEffect onPress={()=>console.log("Google")} >
+          <View style={styles.btnlogin}>
+            <Image source={require("../../assets/images/google-icono.png")}
+            style={styles.btnlogin_icon}
+            />
+            <Text style={{fontSize:20}}>Sign in with Google</Text>
+          </View>
+          
+        </PressEffect>
+        <PressEffect>
+          <View style={styles.btnlogin}>
+            <Image source={require("../../assets/images/microsoft-logo.png")}
+            style={styles.btnlogin_icon}
+            />
+            <Text style={{fontSize:20}}>Sign in with Microsoft</Text>
+          </View>
+        </PressEffect>
+        <View style={{display:"flex",flexDirection: "row", padding:30, gap: 15}}>
+          <Text style={styles.text15}>Don't have an account?</Text>
+          <PressEffect><Text style={[styles.text15,{paddingHorizontal:5, color:"#24B4A2"}]}>Sign up</Text></PressEffect>
+        </View>
       </View>
     </SafeAreaView>
   );
