@@ -1,16 +1,26 @@
 import { StyleSheet } from "react-native";
 
+export const Color={
+    colorPrimary:"#24B4A2",
+    txtColorPrimary:"#1E3A5F",
+    bgGeneral:"#FAFAF7",
+    txtColorSecon:"#3E3E3E",
+    bgFondoCtn:"#FFFFFF"
+}
 const styles = StyleSheet.create({
     container: {
+        // backgroundColor: "black",
         margin: 20,
         flex:1,
+        justifyContent: "center",
+        alignItems: "center"
     },
     logo:{
         margin:20,
         alignItems: "center",
     },
     txtpresentation:{
-        color:"#3E3E3E",
+        color:Color.txtColorSecon,
         fontSize:30,
         textAlign:"center",
         fontWeight:"bold"
@@ -22,19 +32,15 @@ const styles = StyleSheet.create({
         fontSize: 20
     },
     bodycontainer:{
-        // backgroundColor:"red",
         marginTop: 30,
-        marginHorizontal: 40,
         flex:1,
         gap:12
     },
     btnlogin:{
-        // backgroundColor:"red",
         padding:20,
-        marginHorizontal:10,
+        alignItems: "center",
         flexDirection:"row",
         gap: 20,
-        borderColor: "black"
     },
     btnlogin_icon:{
         width: 25,
