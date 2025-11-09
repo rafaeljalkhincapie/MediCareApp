@@ -1,50 +1,69 @@
-# Welcome to your Expo app 👋
+# 🩺 MedAssistant — MVP
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**MedAssistant** es una aplicación móvil desarrollada en **React Native** para ayudar a usuarios que administran los medicamentos, citas y documentación médica de varias personas (por ejemplo, familiares o pacientes a cargo).  
+El sistema incluye integración con IA para organizar automáticamente recordatorios, citas y documentos médicos.
 
-## Get started
+---
 
-1. Install dependencies
+## 🎯 Objetivo del MVP
 
-   ```bash
-   npm install
-   ```
+El objetivo de este MVP (Producto Mínimo Viable) es permitir al usuario:
 
-2. Start the app
+1. **Crear y administrar perfiles** de las personas bajo su cuidado.
+2. **Registrar y gestionar medicamentos** de cada perfil, incluyendo:
+   - Nombre del medicamento
+   - Dosis
+   - Frecuencia
+   - Horario de toma
+   - Observaciones
+3. **Administrar doctores y centros médicos**:
+   - CRUD de doctores
+   - CRUD de ubicaciones o lugares de cita
+4. **Administrar citas médicas**:
+   - Programación de citas por perfil
+   - Recordatorios automáticos
+5. **Cargar y organizar documentos médicos**:
+   - Integración con Google Drive o OneDrive
+   - Subida de archivos (PDF, imágenes, etc.)
+6. **Integración inicial de IA** (fase experimental):
+   - Asistente por chat o voz que:
+     - Analiza documentos cargados (fórmulas médicas, órdenes, etc.)
+     - Genera recordatorios automáticos de citas o medicamentos
+     - Sugiere documentos necesarios para próximas citas
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🧩 Alcance del MVP
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+El MVP se centrará en las siguientes funcionalidades base:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+| Módulo | Funcionalidad | Estado |
+|--------|----------------|--------|
+| 👤 Perfiles | Crear, editar, eliminar, listar perfiles | 🟢 MVP |
+| 💊 Medicamentos | CRUD, asociación con perfil, horarios, notificaciones | 🟢 MVP |
+| 🧑‍⚕️ Doctores | CRUD de doctores | 🟢 MVP |
+| 📍 Ubicaciones | CRUD de ubicaciones | 🟢 MVP |
+| 📅 Citas | Crear, editar, eliminar, recordatorios | 🟢 MVP |
+| 📄 Documentos | Subir, listar, enlazar a Drive/OneDrive | 🟡 MVP+ |
+| 🧠 IA | Procesamiento de texto, extracción de fechas y medicamentos | 🟡 MVP+ |
 
-## Get a fresh project
+> 🟢 = MVP obligatorio  
+> 🟡 = MVP ampliado (fase 2)
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## 🛠️ Tecnologías
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- **Frontend móvil:** React Native + Expo  
+- **Backend:** Firebase (Auth, Firestore, Storage) o Supabase  
+- **Integraciones:**  
+  - Google Drive / Microsoft OneDrive APIs  
+  - OpenAI / Gemini API para IA  
+- **Gestión de estado:** Zustand o Context API  
+- **Navegación:** React Navigation  
+- **Notificaciones:** Expo Notifications
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## ⚙️ Estructura inicial del proyecto
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
